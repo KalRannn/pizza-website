@@ -9,16 +9,16 @@
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;900&family=Raleway:wght@900&display=swap"
         />
-        <link rel="icon" type="image/png" href="assets/images/cheese-burger.png" />
+        <link rel="icon" type="image/png" href="assets/images/logo.webp" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-        <title>Foodo Burger Restaurant</title>
+        <title>Pizza Fusion Cafe</title>
     </head>
     <body>
         <header id="header">
             <div class="header-topbar">
                 <h1>
                     <a href="#menu-burger">
-                        F<span>oodo</span><img src="assets/images/cheese-burger.png" alt="icon burger"
+                        <span></span><img src="assets/images/image.png" alt="icon burger"
                     /></a>
                 </h1>
                 <input type="checkbox" id="check" name="check" />
@@ -34,123 +34,224 @@
                         <li><a href="#about-us">About us</a></li>
                         <li><a href="#products">Products</a></li>
                         <li><a href="#contact-us">Contact us</a></li>
-                        <li><a href="#get-food" class="red-button">Get Foodo</a></li>
-                    </ul>
+                        <li><a href="#get-food" class="red-button" id="orderNowBtn">Order Now</a></li>
+                    </ul>   
                 </nav>
             </div>
             <div class="header-banner">
-                <h2 class="slide">Fresh tasty <br />burger</h2>
-                <p class="header-banner-price slide">$189.00</p>
-                <p class="header-banner-description slide">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolores ipsam corrupti sunt temporibus
-                    animi quam aperiam expedita libero perspiciatis, dolore, nesciunt quaerat voluptate magnam iusto
-                    placeat eveniet ipsum!
-                </p>
-                <a href="#products" class="red-button">Order Now</a>
+                <picture>
+                    <source srcset="assets/images/pizzafusion.webp" type="image/webp">
+                    <img src="assets/images/pizzafusion.webp" alt="Fresh tasty burger" loading="lazy" class="header-banner-img">
+                </picture>
             </div>
         </header>
+        
         <section id="about-us">
             <h2>About us</h2>
             <div class="container about-us">
                 <div class="about-us-item">
-                    <h3>Welcome Foodo</h3>
+                    <h3>Welcome To Pizza Fusion Cafe</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint distinctio fugit voluptatibus
-                        deleniti doloribus placeat, amet quaerat voluptas eum labore quisquam aut soluta, neque libero
-                        dignissimos, nesciunt minus! Blanditiis, dignissimos.
+                        At Pizza Fusion Cafe, we’re all about great pizza with a little something extra. We're a classic pizza shop
+                        at heart, serving up all your favorite traditional flavors—perfectly crisp crusts, rich tomato sauce, and
+                        melty cheese—while adding just a hint of Indian-inspired flair to make our menu truly unique.
                     </p>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint distinctio fugit voluptatibus
-                        deleniti doloribus placeat, amet quaerat voluptas eum labore quisquam aut soluta, neque libero
-                        dignissimos, nesciunt minus! Blanditiis, dignissimos.
-                        <a class="white-button" href="#">Read more</a>
+                        But we’re more than just pizza. Our menu features a variety of delicious options to satisfy every craving,
+                        from savory bites to indulgent treats. Whether you're in the mood for a quick snack, a hearty meal, or
+                        something sweet to finish it off, we've got you covered.
+                        <a class="white-button" href="#products">View Menu</a>
                     </p>
                 </div>
                 <div class="about-us-item">
-                    <img src="assets/images/pizza.jpg" alt="Pizza" />
-                </div>
-                <div class="about-us-item">
-                    <img src="assets/images/meal-burger.jpg" alt="Meal burger" />
-                </div>
-                <div class="about-us-item">
-                    <h3>Wonderful Food</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint distinctio fugit voluptatibus
-                        deleniti doloribus placeat, amet quaerat voluptas eum labore quisquam aut soluta, neque libero
-                        dignissimos, nesciunt minus! Blanditiis, dignissimos.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint distinctio fugit voluptatibus
-                        deleniti doloribus placeat, amet quaerat voluptas eum labore quisquam aut soluta, neque libero
-                        dignissimos, nesciunt minus! Blanditiis, dignissimos.
-                        <a class="white-button" href="#">Read more</a>
-                    </p>
+                    <img src="assets/images/coffee.jpg" alt="Pizza" />
                 </div>
             </div>
         </section>
         <section id="products" class="recommanded">
-            <h2>Recommanded Today</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <h2>Menu</h2>
             <div class="container products">
                 <div class="product">
-                    <img src="assets/images/products/super-supreme.png" alt="Super supreme" />
-                    <h3>Super supreme</h3>
+                    <h3>Buttah Chicken</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, vitae, placeat mollitia
-                        ipsa omnis, facilis aliquid cumque sapiente veniam earum recusandae saepe!
+                        Favourful pizza with a rich butter chicken sauce base, topped with our 
+                        fresh mozzerella, and tender chicken.
                     </p>
-                    <p class="price">$75.00</p>
-                    <a href="#products" class="red-button">Order Now</a>
+                    <button class="see-pricing-btn">See Pricing</button>
+                    <div class="pricing-details" style="display: none;">
+                        <h4>Pricing:</h4>
+                        <ul class="price-list">
+                            <li>Small: $11.99</li>
+                            <li>Medium: $13.99</li>
+                            <li>Large: $16.99</li>
+                            <li>Extra Large: $19.99</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="product">
-                    <img src="assets/images/products/triple-crown.png" alt="Triple crown" />
-                    <h3>Triple crown</h3>
+                    <h3>Carbonara</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, vitae, placeat mollitia
-                        ipsa omnis, facilis aliquid cumque sapiente veniam earum recusandae saepe!
+                        A delicious spin on the classic pasta dish, a creamy alfredo sauce base,
+                        layered with our fresh mozzerella, and savory prosciutto.
                     </p>
-                    <p class="price">$109.00</p>
-                    <a href="#products" class="red-button">Order Now</a>
+                    <button class="see-pricing-btn">See Pricing</button>
+                    <div class="pricing-details" style="display: none;">
+                        <h4>Pricing:</h4>
+                        <ul class="price-list">
+                            <li>Small: $11.99</li>
+                            <li>Medium: $13.99</li>
+                            <li>Large: $16.99</li>
+                            <li>Extra Large: $19.99</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="product">
-                    <img src="assets/images/products/greek-pizza.png" alt="Greek pizza" />
-                    <h3>Greek pizza</h3>
+                    <h3>Spicy Pierogi</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, vitae, placeat mollitia
-                        ipsa omnis, facilis aliquid cumque sapiente veniam earum recusandae saepe!
+                        A bold twist on a classic, layered with our signature tomato sauce, sriracha, 
+                        fresh mozzarella, crispy bacon, and jalapeños, finished with a cool sour cream drizzle.
                     </p>
-                    <p class="price">$86.00</p>
-                    <a href="#products" class="red-button">Order Now</a>
+                    <button class="see-pricing-btn">See Pricing</button>
+                    <div class="pricing-details" style="display: none;">
+                        <h4>Pricing:</h4>
+                        <ul class="price-list">
+                            <li>Small: $11.99</li>
+                            <li>Medium: $13.99</li>
+                            <li>Large: $16.99</li>
+                            <li>Extra Large: $19.99</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="product">
-                    <img src="assets/images/products/double-cheese-burger.jpg" alt="Double cheese burger" />
-                    <h3>Double cheese Burger</h3>
+                    <h3>Classic PEP</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, vitae, placeat mollitia
-                        ipsa omnis, facilis aliquid cumque sapiente veniam earum recusandae saepe!
+                        A timeless favorite, loaded with crispy, spicy pepperoni and 
+                        melted mozzarella, all on a zesty tomato sauce base.
                     </p>
-                    <p class="price">$98.00</p>
-                    <a href="#products" class="red-button">Order Now</a>
+                    <button class="see-pricing-btn">See Pricing</button>
+                    <div class="pricing-details" style="display: none;">
+                        <h4>Pricing:</h4>
+                        <ul class="price-list">
+                            <li>Small: $10.99</li>
+                            <li>Medium: $13.99</li>
+                            <li>Large: $15.99</li>
+                            <li>Extra Large: $18.99</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="product">
-                    <img src="assets/images/products/bacon-double-xl-burger.jpg" alt="Bacon double burger" />
-                    <h3>Bacon double burger</h3>
+                    <h3>Give Me One Margarita</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, vitae, placeat mollitia
-                        ipsa omnis, facilis aliquid cumque sapiente veniam earum recusandae saepe!
+                        Simple yet delicious, with fresh mozzarella, and ripe tomatoes, 
+                        topped with a drizzle of olive oil on a perfect thin crust.
                     </p>
-                    <p class="price">$65.00</p>
-                    <a href="#products" class="red-button">Order Now</a>
+                    <button class="see-pricing-btn">See Pricing</button>
+                    <div class="pricing-details" style="display: none;">
+                        <h4>Pricing:</h4>
+                        <ul class="price-list">
+                            <li>Small: $10.99</li>
+                            <li>Medium: $13.99</li>
+                            <li>Large: $15.99</li>
+                            <li>Extra Large: $18.99</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="product">
-                    <img src="assets/images/products/vegan-burger.jpg" alt="Vegan burger" />
-                    <h3>Vegan burger</h3>
+                    <h3>Be Your Own Artist</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, vitae, placeat mollitia
-                        ipsa omnis, facilis aliquid cumque sapiente veniam earum recusandae saepe!
+                        Create your perfect pizza by choosing any two toppings to mix and match, 
+                        from savory meats to fresh veggies!
                     </p>
-                    <p class="price">$33.00</p>
-                    <a href="#products" class="red-button">Order Now</a>
+                    <button class="see-pricing-btn">See Pricing</button>
+                    <div class="pricing-details" style="display: none;">
+                        <h4>Pricing:</h4>
+                        <ul class="price-list">
+                            <li>Small: $11.99</li>
+                            <li>Medium: $13.99</li>
+                            <li>Large: $16.99</li>
+                            <li>Extra Large: $19.99</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product">
+                    <h3>Veggie</h3>
+                    <p>
+                        A colorful and flavorful mix of fresh vegetables, including green peppers, onions, mushrooms, 
+                        tomatoes, green onions and olives, all smothered in melted mozzarella and rich tomato sauce
+                    </p>
+                    <button class="see-pricing-btn">See Pricing</button>
+                    <div class="pricing-details" style="display: none;">
+                        <h4>Pricing:</h4>
+                        <ul class="price-list">
+                            <li>Small: $11.99</li>
+                            <li>Medium: $13.99</li>
+                            <li>Large: $16.99</li>
+                            <li>Extra Large: $19.99</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product">
+                    <h3>Sicilian Pizza</h3>
+                    <p>
+                        A thick, fluffy crust topped with a rich tomato sauce and melted mozzarella, available in three variations: 
+                        classic, pepperoni & bacon, or truffled.
+                    </p>
+                    <p class="price">$20.99</p>
+                </div>
+                <div class="product">
+                    <h3>SPUD!!!!</h3>
+                    <p>
+                        A perfectly baked potato topped with melted cheese, seasoned with salt and pepper, 
+                        and finished with a hearty portion of baked beans and a rich garlic butter drizzle 
+                    </p>
+                    <p class="price">$12.99</p>
+                </div>
+                <div class="product">
+                    <h3>Chicken Tenders</h3>
+                    <p>
+                        Crispy, golden-brown chicken tenders, served plain or with your choice of Buffalo Ranch, 
+                        Sweet Chili, or Butter Chicken Sauce for the perfect dip or flavor boost.
+                    </p>
+                    <p class="price">$14.99</p>
+                </div>
+                <div class="product">
+                    <h3>Wings</h3>
+                    <p>
+                        Juicy, tender chicken wings, tossed in your choice of Buffalo Ranch, Sweet Chili, 
+                        Butter Chicken Sauce, or served Plain for a customizable, finger-licking experience.
+                    </p>
+                    <p class="price">$13.99</p>
+                </div>
+                <div class="product">
+                    <h3>Poutine</h3>
+                    <p>
+                        Crispy golden fries smothered in rich, savory gravy,
+                        and topped with fresh mozzerella.
+                    </p>
+                    <p class="price">$8.99</p>
+                </div>
+                <div class="product">
+                    <h3>Buttah Chicken Poutine</h3>
+                    <p>
+                        A fusion of flavors featuring crispy fries topped with creamy butter chicken, 
+                        melted mozzerella, and a drizzle of rich, spiced gravy.
+                    </p>
+                    <p class="price">$9.99</p>
+                </div>
+                <div class="product">
+                    <h3>Frechie Frites</h3>
+                    <p>
+                        Crispy, golden, and perfectly seasoned—delicious on their own, straight out of the fryer!
+                    </p>
+                    <p class="price">$6.99</p>
+                </div>
+                <div class="product">
+                    <h3>Cafe Specials</h3>
+                    <p>
+                        Come Enjoy our freshly brewed, French Vanilla, Mocha, Hot Chocolate,
+                        Latte, and Coffee.
+                    </p>
+                    <p class="price">$2.99</p>
                 </div>
             </div>
         </section>
@@ -160,7 +261,7 @@
                 <div class="contact">
                     <iframe
                         title="Restaurant Burger Foodo in London"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5406050415104!2d-0.12174238426300604!3d51.50329727963451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2sfr!4v1609340569460!5m2!1sen!2sfr"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2580.0566340723185!2d-96.9917334!3d49.7097355!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52c1d104cd67479b%3A0xfc37f3622ccd8d71!2sPizza%20Fusion%20Cafe!5e0!3m2!1sen!2sca!4v1743549181033!5m2!1sen!2sca"
                         width="600"
                         height="450"
                         style="border: 0"
@@ -172,7 +273,7 @@
                 <div class="contact">
                     <h3>Leave us a message</h3>
                     <div id="form-contact-status" class=""></div>
-                    <form id="form-contact" class="form-contact" method="POST" action="https://formspree.io/f/xknpkkrp">
+                    <form id="form-contact" class="form-contact" method="POST" action="https://formspree.io/f/mblgzjnw">
                         <div class="form-group required">
                             <label for="firstname">Firstname</label>
                             <input
@@ -211,18 +312,65 @@
             </div>
         </section>
         <footer class="footer">
-            <h1>Foodo<img src="assets/images/cheese-burger.png" alt="icon burger" /></h1>
-            <p>© Foodo. <span></span>.</p>
+            <h1>Pizza Fusion Cafe <img src="assets/images/cheese-burger.png" alt="icon burger" /></h1>
+            <p>© Pizza Fusion Cafe. <span></span>.</p>
             <p>All rights reserved.</p>
         </footer>
-        <div class="whatsapp-button">
-            <a href="https://api.whatsapp.com/send?phone=33611571632&text=Bonjour">
-                <img src="assets/images/whatsapp.png" alt="Contactez nous sur WhatsApp" width="70" />
-            </a>
-        </div>
-        <!--loading -->
         <div class="loading">
             <div class="square"></div>
         </div>
+<!-- Add this before the closing </body> tag -->
+<div class="order-popup-overlay" id="orderPopup">
+    <div class="order-popup-content">
+        <h3>Order Now</h3>
+        <p>Call us to place your order:</p>
+        <div class="store-phone">
+            <a href="tel:+12043992030" class="phone-number">+1 (204) 399-2030</a>
+        </div>
+        <p>We're open daily from 10AM to 8PM</p>
+        <button class="popup-close-btn" id="closePopup">Close</button>
+    </div>
+</div>
+
+<script>
+    // Handle all pricing buttons
+    document.querySelectorAll('.see-pricing-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const pricingDetails = this.nextElementSibling;
+            if (pricingDetails.style.display === 'none') {
+                pricingDetails.style.display = 'block';
+                this.textContent = 'Hide Pricing';
+            } else {
+                pricingDetails.style.display = 'none';
+                this.textContent = 'See Pricing';
+            }
+        });
+    });
+</script>
+
+<script>
+    // Get elements
+    const orderNowBtn = document.getElementById('orderNowBtn');
+    const orderPopup = document.getElementById('orderPopup');
+    const closePopup = document.getElementById('closePopup');
+
+    // Show popup when Order Now is clicked
+    orderNowBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        orderPopup.style.display = 'flex';
+    });
+
+    // Close popup when Close button is clicked
+    closePopup.addEventListener('click', function() {
+        orderPopup.style.display = 'none';
+    });
+
+    // Close popup when clicking outside the content
+    orderPopup.addEventListener('click', function(e) {
+        if (e.target === orderPopup) {
+            orderPopup.style.display = 'none';
+        }
+    });
+</script>
     </body>
 </html>
